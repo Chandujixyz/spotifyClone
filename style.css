@@ -1,0 +1,871 @@
+:root {
+    --black: #000;
+    --grey: #121212;
+    --hover-grey: #282828;
+    --grey-light:#303030;
+    --white: #fff;
+  }
+  .hover:hover{
+    background-color: var(--hover-grey);
+    padding: 5px;
+   }
+   .hovera:hover{
+     color:rgb(159, 158, 158);
+   }
+   .arrowa:hover{
+    background-color: var(--hover-grey);
+   }
+   .boxes:hover{
+    color: rgb(168, 168, 168);
+   }
+  body,
+  html {
+    height: 100%;
+    margin: 0rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  #container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--black);
+    padding: 0.5rem;
+  }
+  
+ 
+
+  #hero{
+    flex:auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+
+    background: linear-gradient(180deg, #222222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0) 100%);
+
+  }
+
+
+
+
+/* +++++++++++++ side bar ++++++++++++++++ */
+
+#sidebar {
+  flex: 0.20;
+  /* overflow-y: auto; */
+  background-color:var(--grey);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 0.5rem;
+  padding-left:50px;
+}
+
+#logo{
+   margin-bottom: 15px;
+   
+}
+#logo img{
+  height: 60px;
+}
+
+ #nav{
+   margin: 25px 0px;
+ }
+
+ .first{
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+ }
+ .first p{
+  margin: 15px;
+ }
+
+
+
+ #feature{
+  margin: 20px opx;
+ }
+ .bwhite img{
+  background-color:white;
+  height: 38px;
+ }
+ .bgreen img{
+  background-color: #004638;
+  height: 35px;
+
+ }
+  
+ #creat{
+  margin: 20px 0px;
+ }
+ #creat div{
+   margin: 15px 0px;
+ }
+
+ #App{
+   position: fixed;
+    bottom:100px;
+ }
+
+ #App button{
+  border: none;
+  background-color:var(--grey);
+  color: var(--white);
+   }
+   #App button img{
+     height: 20px;
+     margin-right:10px;
+     }
+
+
+     /* +++++++++++ Main Section */
+
+     #acount{
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      position:sticky;
+      top: 0px;
+      width:auto;
+      z-index: 100;
+     }
+
+ .arrow{
+
+   width: 40px;
+   position: absolute;
+   background: #131313;
+   border-radius: 40px;
+   height: 40px;
+   margin-right: 10px;
+}
+.arrow img{
+  padding: 7px;
+} 
+
+.rotate{
+  width: 40px;
+  position: absolute;
+  background: #131313;
+  border-radius: 40px;
+  height: 40px;
+  margin-left: 60px;
+}
+.rotate img{
+ transform: rotate(180deg);
+ padding: 7px;
+
+}
+#name{
+  height: 40px;
+  width: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--black);
+}
+#name img{
+margin: 0px 7px;
+height: 36px;
+border-radius: 15px;
+}
+
+/*    section morning */
+
+#morning{
+  padding: 4px 100px 0px 50px;
+}
+#morning h1{
+ font-size: 40px;
+ margin-bottom: 0px;
+}
+ #box{
+display: flex;
+flex-wrap: wrap;
+ 
+ }
+ .boxin{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0px 10px 10px 0px;
+}
+ .boxin h3{
+  box-sizing: border-box;
+  padding-left: 10px;
+   padding-top: 36px;
+  height: 101px;
+  width: 217px;
+ border-radius:3px ;
+  background-color:var(--grey-light);
+ }
+ .boxin img{
+  height: 101px;
+ }
+
+ /* Show you might like */
+ 
+ #like{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+  
+  width:auto;
+ }
+ #like h2, h5{
+  margin: 0px;
+ }
+
+ #albums{
+  margin: 25px 0px 50px 50px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+
+ }
+
+ .albumsbox{
+  height: 306px;
+  width: 251px;
+  background-color:var(--grey-light);
+  margin: 5px 10px 5px 0px;
+ }
+ .albumsbox img{
+  height: 207px;
+  width: 207px;
+  margin: 22px 22px 5px 22px;
+  
+ }
+ .albumsbox h3,.albumsbox h5{
+ margin: 0px 0px 5px 22px;
+}
+
+/* +++++++++++ footer +++++++++++++++ */
+/* player */
+
+#player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:var(--grey-light);
+  position: fixed;
+  bottom:10px;
+  height:100px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+footer{
+  background: #1ED760;
+  position: fixed;
+  bottom:0px;
+  height:20px;
+  width:100%;
+}
+
+#singer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#singer img{
+  margin: 10px;
+}
+#singer h3{
+  margin: 0px;
+}
+
+  /*  */
+
+  #next{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  #next img{
+     height: 25px;
+     margin: 5px 10px;
+  }   
+  #p img{
+  height: 40px;
+  }
+  #time input{
+    width: 35vw;
+  }
+  button{
+    background-color:var(--grey-light);
+    border: none;
+  }
+
+
+  /*  Responsive */
+
+  
+
+  @media (max-width:425px){
+    /* #hero{
+       
+        background-color: aqua;
+    } */
+
+    .CnoNeed{
+      display: none;
+    }
+
+    .BnoNeed,.AnoNeed{
+      display: none;
+    }
+
+    /* side bar */
+   
+    #sidebar {
+      flex: 0.10;
+      margin-right: 0.1rem;
+      padding-left:5px;
+    }
+    
+    #logo{
+       margin-bottom:15px;
+       
+    }
+    #logo img{
+      height: 20px;
+    }
+    
+     #nav{
+       margin: 10px 0px;
+     }
+      .second img{
+        height: 13px;
+      }
+     .first{
+      margin:5px 0px;
+      font-size: 10px;
+     }
+     .first p{
+      margin: 6px;
+     }
+    
+    
+    
+     #feature{
+      margin: 4px 0px;
+     }
+     #feature p{
+       font-size: 10px;
+     }
+     .bwhite img{ 
+      height: 13px;
+     }
+     .bgreen img{
+      height: 13px;
+     }
+     #big img{
+      height: 13px;
+     }
+     #creat{
+      margin: 3px 0px;
+      font-size: 8px;
+     }
+      
+     #App{
+        bottom:50px;
+     }
+     #App p{
+       font-size: 10px;
+    }
+    
+     #App button{
+      border: none;
+      background-color:var(--grey);
+      color: var(--white);
+       }
+       #App button img{
+         height: 10px;
+         margin-right:5px;
+         }
+
+
+    /* name section */
+
+    #acount{
+      margin: 5px;
+     }
+
+ .arrow{
+   width: 20px;
+   border-radius: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+.arrow img{
+  padding: 2px;
+  height: 15px;
+} 
+
+.rotate{
+  width: 20px;
+  border-radius: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+.rotate img{
+ transform: rotate(180deg);
+ padding: 2px;
+ height: 15px;
+
+}
+#name{
+  height: 20px;
+  width: 20px  
+}
+ 
+#name img{
+margin: 0px 7px;
+height: 20px;
+border-radius: 15px;
+}
+     
+    /* morning Section */
+    #morning{
+      padding: 4px 0px 0px 15px;
+    }
+    .boxin h3 {
+      padding-top: 6px;
+      height: 30px;
+      font-size: 8px;
+      width: 89px;
+  }
+  #morning h1{
+    font-size: 14px;
+    margin-bottom: 5px;
+   }
+    
+   #box{
+    overflow-x: auto;
+    height: 100px;
+   }
+   .boxin img{
+    height: 30px;
+   }
+  
+
+   /* Like section */
+   #like{
+    margin: 15px 10px;
+   }
+   #like h2{
+    font-size: 12px;
+   }
+   #like h5{
+    font-size: 8px;
+   }
+   #albums {
+    margin: 10px 0px 50px 10px;
+}
+.albumsbox h3, .albumsbox h5 {
+  margin: 0px 0px 1px 6px;
+  font-size: 7px;
+}
+.albumsbox {
+  height: 111px;
+  width: 90px;
+  margin: 1px 2px 1px 0px;
+}
+.albumsbox img {
+  height: 75px;
+  width: 75px;
+  margin: 6px 6px 1px 6px;
+}
+
+
+   /* footer */
+   #player{
+    bottom:0px;
+    height:65px;
+  }
+  #singer h5{
+    font-size: 8px;
+  }
+  #singer h3{
+    font-size: 12px;
+  }
+  #singer img{
+ margin: 2px;
+ height: 30px;
+  }
+  
+  footer{
+     display: none;
+  }
+    /*  */
+    #next img{
+       height: 15px;
+       margin: 1.5px 4px;
+    }   
+    #p img{
+    height: 20px;
+    }
+    #time input{
+      width: 53vw;
+    }
+
+    /* App install */
+    #App{
+      position: fixed;
+       bottom:70px;
+    }
+    
+  
+}
+
+@media only screen and (min-width:425px) and (max-width:860px){
+    /* #hero{
+       
+        background: rgb(99, 24, 211);
+    } */
+    .BnoNeed,.AnoNeed{
+      display: none;
+    }
+
+    /* side bar */
+   
+    #sidebar {
+      flex: 0.20;
+      margin-right: 0.2rem;
+      padding-left:10px;
+    }
+    
+    #logo{
+       margin-bottom:15px;
+       
+    }
+    #logo img{
+      height: 25px;
+    }
+    
+     #nav{
+       margin: 10px 0px;
+     }
+      .second img{
+        height: 20px;
+      }
+     .first{
+      margin:5px 0px;
+      font-size: 12px;
+     }
+     .first p{
+      margin: 6px;
+     }
+    
+    
+    
+     #feature{
+      margin: 4px 0px;
+     }
+     #feature p{
+       font-size: 12px;
+     }
+     .bwhite img{ 
+      height: 15px;
+     }
+     .bgreen img{
+      height: 15px;
+     }
+     #big img{
+      height: 15px;
+     }
+     #creat{
+      overflow: hidden;
+      margin: 4px 0px;
+      font-size: 10px;
+     }
+      
+     #App{
+       position: fixed;
+        bottom:50px;
+     }
+     #App p{
+       font-size: 10px;
+    }
+    
+     #App button{
+      border: none;
+      background-color:var(--grey);
+      color: var(--white);
+       }
+       #App button img{
+         height: 10px;
+         margin-right:5px;
+         }
+
+
+    /* name section */
+
+    #acount{
+      margin: 5px;
+     }
+
+ .arrow{
+   width: 20px;
+   border-radius: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+.arrow img{
+  padding: 2px;
+  height: 15px;
+} 
+
+.rotate{
+  width: 20px;
+  border-radius: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+.rotate img{
+ transform: rotate(180deg);
+ padding: 2px;
+ height: 15px;
+
+}
+#name{
+  height: 40px;
+  width: 40px  
+}
+ 
+#name img{
+margin: 0px 7px;
+height: 36px;
+border-radius: 15px;
+}
+     
+    /* morning Section */
+    #morning{
+      padding: 4px 0px 0px 15px;
+    }
+    .boxin h3 {
+      padding-top: 6px;
+      height: 30px;
+      font-size: 8px;
+      width: 89px;
+  }
+  #morning h1{
+    font-size: 15px;
+    margin-bottom: 0px;
+   }
+
+   .boxin img{
+    height: 30px;
+   }
+   .boxin{
+     margin: 3px;
+   }
+
+   /* Like section */
+   #like{
+    margin: 0px 15px;
+   }
+   #like h2{
+    font-size: 12px;
+   }
+   #like h5{
+    font-size: 8px;
+   }
+   #albums {
+    margin: 15px 0px 50px 15px;
+}
+.albumsbox h3, .albumsbox h5 {
+  margin: 0px 0px 2px 11px;
+  font-size: 9px;
+}
+.albumsbox {
+  height: 153px;
+  width: 125px;
+  margin: 2px 5px 2px 0px;
+}
+.albumsbox img {
+  height: 103px;
+  width: 103px;
+  margin: 11px 11px 2px 11px;
+}
+
+
+   /* footer */
+   #player{
+    bottom:0px;
+    height:80px;
+  }
+  #singer h3{
+    font-size: 10px;
+  }
+  #singer img{
+ margin: 2px;
+  }
+  
+  footer{
+     display: none;
+  }
+    /*  */
+    #next img{
+       height: 15px;
+       margin: 1.5px 4px;
+    }   
+    #p img{
+    height: 20px;
+    }
+    #time input{
+      width: 40vw;
+    }
+
+    /* App install */
+    #App{
+      position: fixed;
+       bottom:70px;
+    }
+    
+   
+  
+ 
+}
+
+@media only screen and (min-width:860px) and (max-width:1087px){
+    /* #hero{ 
+        background: rgb(202, 38, 38);
+    } */
+
+    /* side portion */
+    #nav{
+      margin: 20px 0px;
+    }
+   
+    .first{
+     margin: 15px 0px;
+    }
+    .first p{
+     margin: 10px;
+    }
+    #feature{
+     margin: 15px opx;
+    }  
+    #creat{
+     margin: 15px 0px;
+    }
+    #creat div{
+      margin: 15px 0px;
+    }
+   
+    #App{
+      position: fixed;
+       bottom:90px;
+    }
+
+    /* morning */
+    .boxin h3 {
+      padding-top: 23px;
+      height: 64px;
+      font-size: 12px;
+      width: 136px;
+     
+  }
+  #morning{
+    padding: 4px 10px 0px 25px;
+  }
+  #morning h1{
+    font-size: 30px;
+    margin-bottom: 0px;
+   }
+
+   .boxin img{
+    height: 63px;
+   }
+
+
+   /* footer */
+   #player{
+    bottom:0px;
+    height:80px;
+  }
+  footer{
+     display: none;
+  }
+    /*  */
+    #next img{
+       height: 20px;
+       margin: 3px 8px;
+    }   
+    #p img{
+    height: 30px;
+    }
+    #time input{
+      width: 30vw;
+    }
+
+    /* App install */
+    #App{
+      position: fixed;
+       bottom:70px;
+    }
+    
+    .AnoNeed{
+      display: none;
+    }
+
+   
+}
+
+@media (min-width:1087px){
+  /* #hero{
+         
+        background: rgb(19, 206, 38);
+    } */
+ 
+     
+    /* side bar */
+     #nav{
+       margin: 20px 0px;
+     }
+    
+     .first{
+      margin: 15px 0px;
+     }
+     .first p{
+      margin: 10px;
+     }
+     #feature{
+      margin: 15px opx;
+     }  
+     #creat{
+      margin: 15px 0px;
+     }
+     #creat div{
+       margin: 15px 0px;
+     }
+    
+     #App{
+       position: fixed;
+        bottom:90px;
+     }
+    
+   
+    
+    
+
+}
+
+
