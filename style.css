@@ -77,18 +77,18 @@
    
 }
 #logo img{
-  height: 60px;
+  height: 55px;
   padding-right: 50px;
 }
 
  #nav{
-   margin: 20px 0px;
+   margin: 15px 0px;
  }
 
  .first{
   display: flex;
   align-items: center;
-  margin: 15px 0px;
+  margin: 10px 0px;
  }
  .first p{
   margin: 10px;
@@ -97,7 +97,7 @@
 
 
  #feature{
-  margin: 15px opx;
+  margin: 10px opx;
  }
  .bwhite img{
   background-color:white;
@@ -110,10 +110,10 @@
  }
   
  #creat{
-  margin: 15px 0px;
+  margin: 10px 0px;
  }
  #creat div{
-   margin: 10px 0px;
+   margin: 5px 0px;
  }
 
  #App{
