@@ -264,19 +264,37 @@ margin: 0px 10px 10px 0px;
   align-items: center;
   background-color:var(--grey-light);
   position: fixed;
-  bottom:10px;
-  height:80px;
+  bottom:30px;
+  height:90px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   padding: 15px;
 }
 footer{
+     display: flex;
+  align-items: center;
+  justify-content: right;
   background: #1ED760;
   position: fixed;
   bottom:0px;
-  height:10px;
+  height:30px;
   width:100%;
+}
+footer>p{
+font-size: 17px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+color: #000;
+margin-right: 100px;
+
+}
+#footer-errow{
+  height: 13px;
+  position: fixed;
+  bottom: 30px;
+  right: 225px;
 }
 
 #singer{
@@ -515,6 +533,9 @@ border-radius: 15px;
   footer{
      display: none;
   }
+      #footer-errow{
+ disple:none;
+}
     /*  */
     #next img{
        height: 15px;
@@ -723,6 +744,9 @@ border-radius: 15px;
   footer{
      display: none;
   }
+          #footer-errow{
+ disple:none;
+}
     /*  */
     #next img{
        height: 15px;
@@ -858,6 +882,9 @@ border-radius: 15px;
   footer{
      display: none;
   }
+          #footer-errow{
+ disple:none;
+}
     /*  */
     #next img{
        height: 20px;
