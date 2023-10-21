@@ -7,7 +7,7 @@
   }
   .hover:hover{
     background-color: var(--hover-grey);
-    padding: 5px;
+/*     padding: 5px; */
    }
    .hovera:hover{
      color:rgb(159, 158, 158);
